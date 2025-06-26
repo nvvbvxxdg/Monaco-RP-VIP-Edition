@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `players` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(24) NOT NULL UNIQUE,
+  `password` VARCHAR(32) NOT NULL,
+  `job` INT DEFAULT 0,
+  `vip_level` INT DEFAULT 0,
+  `admin_level` INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
